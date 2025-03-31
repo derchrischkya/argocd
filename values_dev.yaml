@@ -4,7 +4,7 @@ argo-cd:
   configs:
     secret:
       # htpasswd -nbBC 10 "" "mypassword"  | tr -d ':\n' | sed 's/$2y/$2a/'
-      argocdServerAdminPassword: $2a$10$3OBrgIno9hLLcmAPr86SBuUS3i75dWE5vP/cuDC1gjZ.R7FLxFuGS
+      argocdServerAdminPassword: $2a$10$LrowgH0EEK9HZFeFE4.4HOH3aDCPrl3W2YM3I5wgwSabf2C.Sx7eO
     params:
       server.insecure: true
   server:

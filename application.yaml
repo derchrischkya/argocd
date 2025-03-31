@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+spec:
+  destination:
+    namespace: ''
+    server: ''
+  source:
+    path: /
+    repoURL: https://github.com/privhlab/argocd.git
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - dev_values.yaml
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
