@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-        - values_dev.yaml
+        - dev/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

@@ -24,17 +24,17 @@ helm dependency build
 
 2. Install the chart:
 ```bash
-helm install argocd . --values values_dev.yaml --namespace argocd --create-namespace
+helm install argocd . --values dev/values.yaml --namespace argocd --create-namespace
 ```
 
-3. Customize the chart values [values_dev.yaml](values_dev.yaml) to suit your environment.
+3. Customize the chart values [dev/values.yaml](dev/values.yaml) to suit your environment.
 
 4. Upgrade the deployment:
 
 ```bash
-helm upgrade argocd . --values values_dev.yaml --namespace argocd
+helm upgrade argocd . --values dev/values.yaml --namespace argocd
 ```
 
 ## Automated Deployment via ArgoCD
 
-This repo is configured to deploy ArgoCD via ArgoCD itself. The [application.yaml](application.yaml) manifests defines the deployment to ArgoCD.
+This repo is configured to deploy ArgoCD via ArgoCD itself. The [dev/application.yaml](dev/application.yaml) manifests defines the deployment to ArgoCD.
