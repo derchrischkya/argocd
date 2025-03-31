@@ -37,4 +37,4 @@ helm upgrade argocd . --values values_dev.yaml --namespace argocd
 
 ## Automated Deployment via ArgoCD
 
-- tbd
+This repo is configured to deploy ArgoCD via ArgoCD itself. The [application.yaml](application.yaml) manifests defines the deployment to ArgoCD.
